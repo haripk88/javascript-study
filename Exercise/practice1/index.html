@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, voluptatibus.
-    </p>
+     <button class="add_bag" onclick="addToBag()">Add to Bag</button>
+     <button class="move_wish" onclick="moveToWish()">MOVE TO WISHLIST</button>
+     <button class="add_bag" onclick="addOnebyOne()">
+        Add 1+1 sale item
+     </button>
+     <h1 id="count"></h1>
+     <script>
+        let item = 0;
+        document.querySelector('#count').innerHTML = 'Your bag has '+ item + ' items';
+        function addToBag () {
+           
+            item++;
+            document.querySelector('#count').innerHTML = 'Your bag has '+ item + ' items';
+        }
+        function moveToWish () {
+            item--;
+            document.querySelector('#count').innerHTML = 'Your bag has '+ item + ' items';
+        }
+        function addOnebyOne () {
+            item +=2;
+            document.querySelector('#count').innerHTML = 'Your bag has '+ item + ' items';
+        }
+     </script>
 </body>
 </html>

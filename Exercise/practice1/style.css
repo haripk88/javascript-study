@@ -1,3 +1,16 @@
-.para{
+.add_bag{
+    padding: 8px 20px;
     background-color: lightgreen;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.move_wish{
+    padding: 5px 50px;
+    background-color: rgb(216, 243, 248);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-transform: lowercase;
+
 }
