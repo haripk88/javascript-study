@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calcus">
+           
+              <input type="text" id="display" readonly>
+            
+            <div class="keyboard">
+                    <button class="btn1" onclick="clearClicked()">C</button>
+                    <button class="btn1" onclick="oneClicked()">1</button>
+                    <button class="btn1" onclick="twoClicked()">2</button>
+                    <button class="btn1" onclick="threeClicked()">3</button>
+                    <button class="btn1" onclick="plusClicked()">+</button>
+                    <button class="btn1" onclick="fourClicked()">4</button>
+                    <button class="btn1" onclick="fiveClicked()">5</button>
+                    <button class="btn1" onclick="sixClicked()">6</button>
+                    <button class="btn1" onclick="minusClicked()">-</button>
+                    <button class="btn1" onclick="sevenClicked()">7</button>
+                    <button class="btn1" onclick="eightClicked()">8</button>
+                    <button class="btn1" onclick="nineClicked()">9</button>
+                    <button class="btn1" onclick="starClicked()">*</button>
+                    <button class="btn1" onclick="divideClicked()">/</button>
+                    <button class="btn1" onclick="pointClicked()">.</button>
+                    <button class="btn1" onclick="zeroClicked()">0</button>
+                    <button class="btn1" onclick="equalClicked()">=</button>
+            </div>
+        
+    </div>
+    <script>
+        let displayVariable = '';
+        document.querySelector('#display').value= displayVariable;
+        function oneClicked(){
+            displayVariable += 1;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function twoClicked(){
+            displayVariable += 2;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function threeClicked(){
+            displayVariable += 3;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function fourClicked(){
+            displayVariable += 4;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function fiveClicked(){
+            displayVariable +=5;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function sixClicked(){
+            displayVariable += 6;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function sevenClicked(){
+            displayVariable += 7;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function eightClicked(){
+            displayVariable += 8;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function nineClicked(){
+            displayVariable += 9;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function zeroClicked(){
+            displayVariable += 0;
+            document.querySelector('#display').value= displayVariable;
+        }
+        function pointClicked(){
+            displayVariable += ".";
+            document.querySelector('#display').value= displayVariable;
+        }
+        function plusClicked(){
+            displayVariable += "+";
+            document.querySelector('#display').value= displayVariable;
+        }
+        function minusClicked(){
+            displayVariable += "-";
+            document.querySelector('#display').value= displayVariable;
+        }
+        function starClicked(){
+            displayVariable += "*";
+            document.querySelector('#display').value= displayVariable;
+        }
+        function divideClicked(){
+            displayVariable += "/";
+            document.querySelector('#display').value= displayVariable;
+        }
+
+        function equalClicked(){
+            displayVariable = eval(displayVariable);
+            document.querySelector('#display').value= displayVariable;
+        }
+
+        function clearClicked(){
+            displayVariable = '';
+            document.querySelector('#display').value= displayVariable;
+        }
+        
+    </script>
+</body>
+</html>
